@@ -1,0 +1,487 @@
+/* ========== TABLET (768px - 1024px) ========== */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text .name-text {
+        font-size: clamp(3rem, 8vw, 4.5rem);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .internships-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-timeline {
+        padding-left: 30px;
+    }
+
+    .project-card {
+        height: 200px;
+    }
+}
+
+/* ========== MOBILE (< 768px) ========== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .resume-btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+
+    .resume-btn span {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 80px 16px 40px;
+        min-height: 90vh;
+    }
+
+    .hero-container {
+        gap: 20px;
+    }
+
+    .hero-text .hey-text {
+        font-size: 1rem;
+    }
+
+    .hero-text .name-text {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+    }
+
+    .role-text {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .skill-card {
+        padding: 18px 12px;
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+
+    .skill-tags span {
+        font-size: 0.7rem;
+        padding: 2px 10px;
+    }
+
+    .project-card {
+        height: 180px;
+        padding: 16px;
+    }
+
+    .card-front h3,
+    .card-back p {
+        font-size: 0.9rem;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .cert-badge {
+        padding: 14px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+    }
+
+    .contact-email {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+
+    .education-timeline {
+        padding-left: 30px;
+    }
+
+    .projects-timeline::before {
+        left: 8px;
+    }
+
+    .timeline-circle {
+        left: -28px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .edu-dot {
+        left: -28px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .glass {
+        padding: 16px;
+    }
+}
+
+/* ========== SMALL MOBILE (< 480px) ========== */
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-text .name-text {
+        font-size: 2.2rem;
+    }
+
+    .project-card {
+        height: 160px;
+    }
+
+    .card-front h3 {
+        font-size: 0.8rem;
+    }
+
+    .tech-tags span {
+        font-size: 0.65rem;
+        padding: 1px 8px;
+    }
+}
+/* ========== RESPONSIVE ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .projects-grid {
+        gap: 24px;
+        max-width: 100%;
+    }
+
+    .project-card {
+        height: 230px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 60px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+    }
+
+    .project-card {
+        height: 220px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 20px 16px;
+    }
+
+    .project-icon {
+        font-size: 2rem;
+    }
+
+    .card-front h3 {
+        font-size: 0.95rem;
+    }
+
+    .card-back p {
+        font-size: 0.8rem;
+    }
+
+    .github-link {
+        font-size: 0.75rem;
+        padding: 6px 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .project-card {
+        height: 200px;
+    }
+
+    .card-front,
+    .card-back {
+        padding: 16px 12px;
+        border-radius: 12px;
+    }
+
+    .project-icon {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .card-front h3 {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+
+    .tech-tags span {
+        font-size: 0.6rem;
+        padding: 2px 10px;
+    }
+
+    .card-back p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .github-link {
+        font-size: 0.7rem;
+        padding: 4px 14px;
+    }
+
+    .hover-hint {
+        font-size: 0.6rem;
+    }
+}
+/* Small Mobile */
+@media (max-width: 480px) {
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px 14px;
+        gap: 10px;
+        border-radius: 14px;
+    }
+
+    .stat-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+
+    .stat-content h3 {
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+    }
+
+    .skill-tags span {
+        font-size: 0.55rem;
+        padding: 2px 8px;
+        border-radius: 10px;
+    }
+
+    .skill-tags span i {
+        font-size: 0.55rem;
+        margin-right: 2px;
+    }
+}/* Mobile */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 60px 0;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .stat-card {
+        padding: 20px 18px;
+        gap: 14px;
+        border-radius: 16px;
+    }
+
+    .stat-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.4rem;
+        border-radius: 12px;
+    }
+
+    .stat-content h3 {
+        font-size: 0.85rem;
+    }
+
+    .skill-tags span {
+        font-size: 0.65rem;
+        padding: 2px 10px;
+    }
+}
+/* ========== RESPONSIVE ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+/* ========== RESPONSIVE ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .internship-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .internship-left {
+        width: 100%;
+    }
+
+    .internship-right {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .internships-section {
+        padding: 60px 0;
+    }
+
+    .internship-item {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        border-radius: 16px;
+    }
+
+    .internship-left {
+        gap: 14px;
+        width: 100%;
+    }
+
+    .company-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+        border-radius: 12px;
+    }
+
+    .company-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .company-name {
+        font-size: 0.8rem;
+    }
+
+    .company-sub {
+        font-size: 0.7rem;
+    }
+
+    .internship-right {
+        width: 100%;
+    }
+
+    .internship-details li {
+        font-size: 0.8rem;
+        padding-left: 16px;
+    }
+
+    .cert-btn {
+        font-size: 0.7rem;
+        padding: 5px 14px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .internship-item {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .company-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+    }
+
+    .company-info h3 {
+        font-size: 0.8rem;
+    }
+
+    .company-name {
+        font-size: 0.7rem;
+    }
+
+    .internship-details li {
+        font-size: 0.7rem;
+        padding-left: 14px;
+    }
+
+    .cert-btn {
+        font-size: 0.65rem;
+        padding: 4px 12px;
+    }
+}

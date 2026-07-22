@@ -1,0 +1,25 @@
+portfolio/
+│
+├── index.php
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── animations.js
+│   └── images/
+│       └── profile.jpg
+├── templates/
+│   ├── header.php
+│   ├── hero.php
+│   ├── about.php
+│   ├── skills.php
+│   ├── internships.php
+│   ├── projects.php
+│   ├── achievements.php
+│   ├── education.php
+│   ├── contact.php
+│   └── footer.php
+└── resume/
+    └── JANANI_A_Resume.pdf
